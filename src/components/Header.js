@@ -1,8 +1,7 @@
 import React from 'react';
-import HeaderMenu from './HeaderMenu';
 export default function Header() {
   const menu = [
-    'Dashboard',
+    'dashboard',
     'messages',
     'orders',
     'gigs',
@@ -10,11 +9,15 @@ export default function Header() {
     'earnings',
     'community',
     'more',
-    'switch to buying',
+    'switchtobuying',
     'profile',
   ];
   const menuItem = menu.map((item) => {
-    return <li>{item}</li>;
+    return (
+      <li className="page-scroll">
+        <a href={item}>{item}</a>
+      </li>
+    );
   });
   return (
     <nav className="navbar navbar-default navbar-fixed-top">
@@ -36,20 +39,7 @@ export default function Header() {
           </a>
         </div>
         <div className="navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav navbar-right">
-            <li className="hidden">
-              <a href="#page-top"></a>
-            </li>
-            <li className="page-scroll">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li className="page-scroll">
-              <a href="#about">About</a>
-            </li>
-            <li className="page-scroll">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
+          <ul className="nav navbar-nav navbar-right">{menuItem}</ul>
         </div>
       </div>
     </nav>

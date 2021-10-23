@@ -2,7 +2,11 @@ import React from 'react';
 export default function Avatar() {
   return (
     <div>
-      <img src="" width="100" height="100" />
+      <img
+        src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+        width="100"
+        height="100"
+      />
     </div>
   );
 }
