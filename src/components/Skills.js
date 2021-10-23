@@ -1,5 +1,5 @@
 import React from 'react';
-export default function Languages({ title, items }) {
+export default function Skills({ title, items }) {
   return (
     <div>
       <h1>{title}</h1>

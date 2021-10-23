@@ -4,4 +4,19 @@ import Avatar from './Avatar';
 import ProfileCard from './ProfileCard';
 import GigsList from './GigsList';
 import About from './About';
-export { Header, Footer, Avatar, ProfileCard, GigsList, About };
+import Languages from './Languages';
+import Skills from './Skills';
+import Education from './Education';
+import Certification from './Certificates';
+export {
+  Header,
+  Footer,
+  Avatar,
+  ProfileCard,
+  GigsList,
+  About,
+  Languages,
+  Skills,
+  Education,
+  Certification,
+};
